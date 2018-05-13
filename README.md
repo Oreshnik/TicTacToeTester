@@ -1,5 +1,5 @@
 This is a Java tool for testing bots for CodinGame multiplayer <a href="https://www.codingame.com/multiplayer/bot-programming/tic-tac-toe">Ultimate Tic-Tac-Toe</a>.
-<h3>How does it works?</h3>
+<h3>How does it work?</h3>
 Compile sources. Run Tester.class with params:
 <ul>
 <li>Command line to start a new version of your bot process 

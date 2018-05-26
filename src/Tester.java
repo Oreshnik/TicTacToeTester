@@ -1,3 +1,4 @@
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
@@ -56,6 +57,10 @@ public class Tester {
                 } catch (Exception e) {
                     state = GameState.LOSE;
                     System.out.println((i == testedBot ? "newPlayer" : "oldPlayer") +  " does not provide input");
+                    try {
+                        System.out.println(players.get(i).getError());
+                    } catch (IOException ioe) {
+                    }
                 }
                 if (!GameState.UNFINISHED.equals(state)) {
                     if (GameState.DRAW.equals(state)) {

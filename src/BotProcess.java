@@ -3,6 +3,7 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 import java.io.PrintStream;
 import java.util.Scanner;
+import java.util.stream.Collectors;
 
 /**
  * Created by Екатерина on 09.05.2018.
@@ -44,5 +45,9 @@ public class BotProcess {
             error.readLine();
 
         }
+    }
+
+    public String getError() throws IOException {
+        return error.lines().collect(Collectors.joining("\n"));
     }
 }
